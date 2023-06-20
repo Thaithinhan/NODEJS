@@ -7,7 +7,7 @@ const questionPath = path.join(
 );
 
 function checkExitsId(req, res, next) {
-  console.log("result của req", req.body);
+  // console.log("result của req", req.body);
   const id = req.params.id;
   fs.readFile(questionPath, (err, data) => {
     questions = JSON.parse(data);

@@ -51,12 +51,16 @@ route
 route
   .route("/:id")
   .get(middlewareQuestion.checkExitsId, (req, res) => {
-    res
-      .status(200)
-      .json({ message: "Found question with id " + req.params.id });
+    fs.readFile(questionPath, (err, data) => {
+      const questions = JSON.parse(data);
+      const findQuestion = questions.find(
+        (question) => question.id === +req.params.id
+      );
+      res.status(200).json(findQuestion);
+    });
   })
   .put(middlewareQuestion.checkExitsId, (req, res) => {
-    console.log("kết quả của data là:", req.body);
+    // console.log("kết quả của data là:", req.body);
     fs.readFile(questionPath, (err, data) => {
       let questions = JSON.parse(data);
       const index = questions.findIndex(
