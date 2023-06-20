@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* public/styles.css */
+      * {
+        box-sizing: border-box;
+      }
+      form {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid lightgray;
+      }
+
+      .form-title {
+        color: lightcoral;
+        border-bottom: 1px solid lightcoral;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: lightcoral;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      form h2 {
+        color: lightcoral;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="api/v1/users/create" method="POST" class="postUser-form">
+      <h2>ADD NEW USER</h2>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="form-group">
+        <label for="photo">Photo:</label>
+        <input type="text" id="photo" name="photo" />
+      </div>
+      <div class="form-group">
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <button type="submit">Add User</button>
+    </form>
+  </body>
+</html>

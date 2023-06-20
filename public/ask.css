@@ -1,0 +1,38 @@
+nav {
+  background-color: black;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  color: lightgrey;
+  padding: 10px 5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: auto;
+}
+.main-content h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.main-content form textarea {
+  display: inline-block;
+  width: 100%;
+}
+
+input {
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+}
