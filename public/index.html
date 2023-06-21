@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODOLIST</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>TODO APP</h1>
+      <form method="POST" class="main-form">
+        <input
+          type="text"
+          placeholder="Add new Todo"
+          name="title"
+          class="input-todo"
+        />
+        <button type="submit" class="btn-add-todo">+</button>
+      </form>
+      <ul class="list-todo">
+        <!-- <li>
+          <span>todo 1</span>
+          <button><i class="fa-solid fa-trash"></i></button>
+        </li>
+        <li>
+          <span>todo 1</span>
+          <button><i class="fa-solid fa-trash"></i></button>
+        </li> -->
+      </ul>
+      <div class="pending-task">
+        <span class="pending-number">You have 4 pending tasks</span>
+        <button class="btn-clear-all">Clear All</button>
+      </div>
+    </div>
+
+    <!-- Nhunsg file script -->
+    <script src="/index.js"></script>
+  </body>
+</html>
