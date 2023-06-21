@@ -57,6 +57,7 @@ input.input-todo {
   font-weight: 600;
   min-height: 35px;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .list-todo > li > button {

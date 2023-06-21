@@ -80,7 +80,7 @@ async function handleUpdate(e, id) {
   const editTodo = todoList.find((todo) => todo.id === id);
   const spanElement = e.target.querySelector("span");
   spanElement.classList.add("completed");
-  editTodo.completed = true;
+  editTodo.completed = !editTodo.completed;
   await fetch(`http://localhost:8000/api/v1/todos/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
