@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.add-player {
+  max-width: 600px;
+  margin: auto;
+}
+.add-player input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.error-player {
+  background-color: #f5cecf;
+  padding: 10px;
+  font-weight: 700;
+  color: red;
+  display: none;
+}
+
+button {
+  background-color: blue;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
